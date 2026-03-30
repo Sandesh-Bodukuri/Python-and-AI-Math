@@ -16,3 +16,11 @@ print("Greater than:", a > b)
 print("Less than:", a < b)
 print("Greater than or equal to:", a >= b)
 print("Less than or equal to:", a <= b)
+#Logical operators
+a = True
+b = False
+#precedence of logical operators: not > and > or
+print("logical NOT:", not a)
+print("logical AND:", a and b)
+print("logical OR:", a or b)
+
