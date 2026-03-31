@@ -32,4 +32,20 @@ print("Bitwise XOR:", a ^ b)
 print("Bitwise NOT:", ~a)
 print("Left Shift:", a << 1)
 print("Right Shift:", a >> 1)
+#Assignment operators
+x = 10
+x += 5  # Equivalent to x = x + 5
+print("After += operator:", x)
+x -= 3  # Equivalent to x = x - 3
+print("After -= operator:", x)
+x *= 2  # Equivalent to x = x * 2
+print("After *= operator:", x)
+x /= 4  # Equivalent to x = x / 4
+print("After /= operator:", x)
+x //= 2  # Equivalent to x = x // 2
+print("After //= operator:", x)
+x %= 3  # Equivalent to x = x % 3
+print("After %= operator:", x)
+x **= 2  # Equivalent to x = x ** 2
+print("After **= operator:", x)
 
