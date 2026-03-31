@@ -48,4 +48,16 @@ x %= 3  # Equivalent to x = x % 3
 print("After %= operator:", x)
 x **= 2  # Equivalent to x = x ** 2
 print("After **= operator:", x)
+#Membership operators
+my_list = [1, 2, 3, 4, 5]
+print("Is 3 in the list?", 3 in my_list)
+print("Is 6 not in the list?", 6 not in my_list)
+#Identity operators
+a = [1, 2, 3]
+b = a
+print("a is b:", a is b)  # True, because a and b refer to the same object
+c = [1, 2, 3]
+print("a is c:", a is c)  # False, because a and c refer to different objects
+print("a == c:", a == c)  # True, because a and c have the same content
+
 
