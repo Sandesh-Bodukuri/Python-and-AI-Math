@@ -23,4 +23,13 @@ b = False
 print("logical NOT:", not a)
 print("logical AND:", a and b)
 print("logical OR:", a or b)
+#Bitwise operators
+a = 5  
+b = 3  
+print("Bitwise AND:", a & b)
+print("Bitwise OR:", a | b)
+print("Bitwise XOR:", a ^ b)
+print("Bitwise NOT:", ~a)
+print("Left Shift:", a << 1)
+print("Right Shift:", a >> 1)
 
