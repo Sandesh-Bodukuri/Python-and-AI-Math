@@ -59,5 +59,19 @@ print("a is b:", a is b)  # True, because a and b refer to the same object
 c = [1, 2, 3]
 print("a is c:", a is c)  # False, because a and c refer to different objects
 print("a == c:", a == c)  # True, because a and c have the same content
+#ternary operator
+age = 18
+status = "Adult" if age >= 18 else "Minor"
+print("Status:", status)
+#operator precedence
+result = 10 + 5 * 2  # Multiplication has higher precedence than addition
+print("Result of 10 + 5 * 2:", result)
+result = (10 + 5) * 2  # Parentheses change the precedence
+print("Result of (10 + 5) * 2:", result)
+#operator associativity
+result = 10 - 5 - 2  # Left-to-right associativity for subtraction
+print("Result of 10 - 5 - 2:", result)
+result = 10 ** 2 ** 3  # Right-to-left associativity for exponent
+print("Result of 10 ** 2 ** 3:", result)
 
 
