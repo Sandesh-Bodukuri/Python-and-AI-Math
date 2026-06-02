@@ -1,9 +1,6 @@
-total_bill= input("Enter the total restaurant bill amount:")
-total_bill = float(total_bill)
-n = input("Enter number of persons splitting the bill:")
-n = int(n)
-tip = input("Enter the tip percentage you want to give:")
-tip = float(tip)
+total_bill= float(input("Enter the total restaurant bill amount:"))
+n = int(input("Enter number of persons splitting the bill:"))
+tip =  float(input("Enter the tip percentage you want to give:"))
 
 tip_amount = total_bill * (tip / 100)
 grand_total = total_bill + tip_amount
