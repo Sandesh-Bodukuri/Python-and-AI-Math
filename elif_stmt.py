@@ -11,7 +11,7 @@ if coding_score < 0 or coding_score > 100 or experience < 0:
     print("\n[ERROR]: Invalid input metrics.")
     exit()
 
-# 3. Tiered Evaluation Logic
+# 3. Tiered Evaluation logic
 status = ""
 
 if coding_score >= 90 and experience >= 3:
