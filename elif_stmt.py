@@ -31,9 +31,9 @@ else:
     status = "APPLICATION UNSUCCESSFUL"
 
 # 4. Print Dashboard Panel
-print("\n" + "=" * 50)
+
 print(f" SYSTEM DECISION       : {status}")
-print("=" * 50 + "\n")
+
 print("             EVALUATION REPORT              ")
 
 print(f" Applicant Coding Score : {coding_score:.1f}/100")
