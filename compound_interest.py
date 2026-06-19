@@ -18,7 +18,7 @@ print(f"Estimated balance(5 years) :{bal_5:.2f}")
 print(f"Estimated balance (10 years) :{bal_10:.2f}")
 print(f"Estimated balance (15 years) :{bal_15:.2f}")
 
-print(f"Estimated years to double: {doubling_years}years")
+print(f"Estimated years to double the principal: {doubling_years}years")
 
 if doubling_years % 2 != 0 :
     print("Doubling years are odd")
