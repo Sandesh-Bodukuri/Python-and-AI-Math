@@ -16,3 +16,18 @@ print(dictionary_01)
 dictionary_01.update({"Saraswati": "Brahma"})
 print(dictionary_01)
 
+#converting list into dictionary
+chocolates = [["Cadbury","Dairy Milk"], ["Nestle","Kit-Kat"], ["Amul","Dark Chocolate"], ["Hersheys","Kisses"]]
+chocolates_dict = dict(chocolates)
+print(chocolates_dict)
+
+#converting tuples into dictionary
+cars = [("Audi","Quattro"),("BMW","M5"),("Ferrari","F40"),("Rolls Royce","Cullinan")]
+cars_dict = dict(cars)
+print(cars_dict)
+
+keys = ['name', 'age', 'city']
+values = ['Alice', 30, 'New York']
+
+my_dict = dict(zip(keys, values))
+print(my_dict)
