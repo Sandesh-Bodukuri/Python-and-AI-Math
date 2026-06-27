@@ -31,3 +31,17 @@ values = ['Alice', 30, 'New York']
 
 my_dict = dict(zip(keys, values))
 print(my_dict)
+if "city" in my_dict :
+    del my_dict["city"]
+print(my_dict)
+
+print(f"Length = {len(my_dict)}")
+print(f"Length = {len(cars)}") 
+
+new = cars_dict.get("Ferrari")
+print(new)
+
+#iterating over a for loop
+d = {'Red': 1, 'Green': 2, 'Blue': 3} 
+for color_key, value in d.items():
+     print(color_key, 'corresponds to ', d[color_key])
