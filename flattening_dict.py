@@ -15,4 +15,4 @@ def flatten_dict(nested_dict, parent_key=''):
     return flat_dict
 
 data = {"a": {"b": 1, "c": {"d": 2}}, "e": 3}
-print(flatten_dict(data))
+print(f"The single level dictionary is : {flatten_dict(data)}")
