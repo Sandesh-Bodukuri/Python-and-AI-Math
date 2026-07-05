@@ -46,3 +46,15 @@ ai_club.add("Kiran")       # Adds an item
 ai_club.remove("Amit")     # Removes an item
 
 print(f"Updated AI Club: {ai_club}")
+
+#dynamic updating
+tech_stack = {"Python", "Git"}
+new_requirements = {"Docker", "AWS", "Python"}
+
+# .update() acts like an in-place Union (|)
+tech_stack.update(new_requirements) 
+print(tech_stack)  # {'Python', 'Git', 'AWS', 'Docker'}
+
+# .intersection_update() acts like an in-place Intersection (&)
+tech_stack.intersection_update({"Python", "Docker", "Linux"})
+print(tech_stack)  # {'Python', 'Docker'}
