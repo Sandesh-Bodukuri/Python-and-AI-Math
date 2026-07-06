@@ -58,3 +58,19 @@ print(tech_stack)  # {'Python', 'Git', 'AWS', 'Docker'}
 # .intersection_update() acts like an in-place Intersection (&)
 tech_stack.intersection_update({"Python", "Docker", "Linux"})
 print(tech_stack)  # {'Python', 'Docker'}
+
+required_skills = {"Python", "SQL"}
+candidate_a = {"Python", "SQL", "Docker", "Git"}
+candidate_b = {"Python", "HTML"}
+
+# Is the candidate qualified? (Are required skills a SUBSET of candidate skills?)
+print(required_skills.issubset(candidate_a))    # True
+print(required_skills.issubset(candidate_b))    # False (Missing SQL!)
+
+# Is Candidate A overqualified? (Is candidate a SUPERSET of required skills?)
+print(candidate_a.issuperset(required_skills))  # True
+
+# Disjoint checks: Do they have absolutely NOTHING in common?
+backend_dev = {"Python", "Go"}
+design_team = {"Figma", "Photoshop"}
+print(backend_dev.isdisjoint(design_team))     # True
