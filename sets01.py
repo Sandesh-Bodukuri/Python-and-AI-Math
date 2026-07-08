@@ -16,3 +16,17 @@ winner = lucky_draw.pop()
 
 print(f"The winner is: {winner}")
 print(f"Remaining pool: {lucky_draw}")
+
+
+veg_pizza_toppings = {"Mushroom", "Paneer", "Onion"}
+meat_lovers_toppings = {"Chicken", "Pepperoni", "Bacon"}
+
+# Do they overlap?
+print(veg_pizza_toppings.isdisjoint(meat_lovers_toppings))  # Output: True
+
+primary_colors = {"Red", "Yellow", "Blue"}
+all_colors = {"Red", "Yellow", "Blue", "Green", "Purple"}
+
+# Using comparison symbols
+print(primary_colors <= all_colors)  # Output: True
+print(all_colors >= primary_colors)  # Output: True
