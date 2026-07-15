@@ -21,3 +21,14 @@ print(f"Test Run A -> {verdict_1} (Status: {status_1})")
 
 verdict_2, status_2 = verify_system_access(verified_employees, "EMP_99")
 print(f"Test Run B -> {verdict_2} (Status: {status_2})")
+
+
+global_app_name = "SecureCore v2" # GLOBAL
+
+def calculate_bonus(salary):
+    bonus_multiplier = 0.15       # LOCAL variable
+    return salary * bonus_multiplier
+
+# print(bonus_multiplier) 
+# ^ CRASH! NameError: name 'bonus_multiplier' is not defined. 
+# The main application has no structural access to what happens inside the local bubble.
