@@ -26,7 +26,7 @@ def my_timer(func):
 def process_data(items: list[int]):
     """Simulates a heavy calculation task."""
     time.sleep(0.5)  # Simulate processing delay
-    return [x * 2 for x in items]
+    return [x * 2 for x in items] 
 
 
 # Calling the function as normal—the decorator transparently runs around it!
