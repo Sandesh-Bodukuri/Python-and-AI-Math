@@ -30,4 +30,4 @@ transactions = [
 # Note: Data MUST be sorted by key field prior to grouping
 for key, group in itertools.groupby(transactions, key=lambda x: x["type"]):
     total = sum(item["amount"] for item in group)
-    print(f"Total {key}: ${total}")
+    print(f"Total {key}: {total}")
